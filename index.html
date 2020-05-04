@@ -1,39 +1,55 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-En">
+
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="Description" content="Global Scale SARS-CoV-2 Testing">
+	<title>Global SARS-CoV-2 Testing</title>
+
+	<base href="/">
+	<style>
+		body {
+			font-family: system-ui;
+			font-display: optional;
+			width: 100vw;
+			max-width: 100vw;
+			min-width: 400px;
+			overflow-x: hidden;
+			font-size: 15px;
+			color: #000;
+			background-color: #fff;
+		}
+		#app, noscript {
+			display: flex;
+			width: 100vw;
+			height: 100vh;
+			align-items: center;
+			justify-content: center;
+		}
+		#app {
+			display: flex;
+			align-content: normal;
+			justify-content: normal;
+			height: auto;
+			flex-flow: column nowrap;
+			min-height: 100vh;
+			min-width: 340px;
+			width: 100vw;
+			padding: 0;
+			margin: 0 auto;
+			position: relative;
+		}
+	</style>
+	<link rel="stylesheet" href="styles/app/app.css" media="all">
+</head>
+
 <body>
-  <h2>Global Scale SARS-CoV-2 Testing Strategies</h2>
-  <p>
-    This will contain an interative version of the <a href="https://docs.google.com/spreadsheets/d/1vgjfj3HQX269kGi21wtF6sfsjLfuOe-NWLp2GT7XMjE/edit#gid=0">Scalable SARS-CoV-2 Testing Strategies spreadsheet</a>.  The <a href="https://github.com/TheWorldSim/SARS-CoV-2-testing">code currently lives here</a>.
-  </p>
-  <p>
-    This project is called CoronaOpenSource because we believe the future needs large scale rapid collaboration which is only possible if designs and information are shared freely.  However the project welcomes existing and new closed source implmentations for testing.
-    <br>The goal is to get more, and accurate testing globally.
-    <br>The scale and time period required means this also needs to be affordable.
-  </p>
-  <p>
-    It aims to answer the questions of:
-    <ul>
-      <li>to achieve a level of testing, what level of resources are needed?</li>
-      <li>what plans need what resources (chemicals, plastics, robotics, facilities)</li>
-      <li>what plans have been clinically validated</li>
-      <li>which companies, NGOs or government units might provide these resources</li>
-    </ul>
-  </p>
-  <p>
-    <h4>Standards</h4>
-    After a conversation with Daniel Goodwin and Joi Ito, it's clear that interoperability is key for large scale testing.  For example we have standards for:
-    <ul>
-      <li><a href="https://slas.org/SLAS/assets/File/ANSI_SLAS_4-2004_WellPositions.pdf">96 well plates from ANSI/SBS/SLAS</a></li>
-      <li><a href="https://www.google.com/search?q=iso+8655&oq=iso+8655">pipette accuracy etc</a></li>
-    </ul>
-    But we don't have standards for:
-    <ul>
-      <li><a href="https://medium.com/@danielrgoodwin/architecting-the-biocensus-9da1d3399359">sample collection tubes</a></li>
-      <li>transport media (chemical buffer / solutions)</li>
-      <li>lysis media (chemical buffer / solutions)</li>
-      <li>pipette tips; dimensions, wetability, filtration standards, recycling etc</li>
-      <li>inter region data exchange</li>
-    </ul>
-    This will serve as a call to action and as place to organise and agree upon those standards.
-  </p>
+	<noscript>Please enable Javascript.</noscript>
+	<div id="app"></div>
+	<script src="scripts/vendor.js" defer></script>
+	<script src="scripts/main.js" defer></script>
 </body>
+
 </html>
